@@ -1,0 +1,141 @@
+.repl-input{
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-family: Code;
+}
+
+.scroll-content{
+    padding-left: 17px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.tab-container{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    display: flex;
+}
+.tab{
+    width: 100px;
+    height: 100%;
+    background-color: #f0f0d8;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.scroll-content::-webkit-scrollbar{
+    width: 0px;
+}
+.scroll-content::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.repl-content{
+    position: relative;
+    pointer-events: all;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 1021px;
+    background-color: #f0f0d8;
+    border-top: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+    height: 110px;
+}
+
+.repl-content[isexpanded="1"]{
+    animation: expand 1s 1 forwards;
+}
+.repl-content[isexpanded="0"]{
+    animation: contract 1s 1 forwards;
+}
+
+.repl-expand[isexpanded="1"]{
+    animation: rotateTo 1s 1 forwards;
+}
+.repl-expand[isexpanded="0"]{
+    animation: rotateFrom 1s 1 forwards;
+}
+
+.repl-expand{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    height: 17px;
+    width: 17px;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.repl-expand:hover{
+    border: 1px solid black;
+}
+
+.repl-blinker[focused="1"]{
+    animation: fadeInOut 1s ;
+}
+
+@keyframes fadeInOut{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes expand{
+    from{
+        height: 110px;
+    }
+    to{
+        height: 300px;
+    }
+}
+
+@keyframes contract{
+    from{
+        height: 300px;
+    }
+    to{
+        height: 110px;
+    }
+}
+@keyframes rotateTo{
+    from{
+        transform: rotate(-90deg);
+    }
+    to{
+        transform: rotate(-270deg);
+    }
+}
+
+@keyframes rotateFrom{
+    from{
+        transform: rotate(-270deg);
+    }
+    to{
+        transform: rotate(-90deg);
+    }
+}

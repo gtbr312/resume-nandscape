@@ -1,0 +1,272 @@
+.player-shell{
+    width: 68px;
+    height: 88px;
+    margin-left: -4px;
+    position: absolute;
+    background-image: url("../../assets/sprites/playerSprites/playerSprite.png");
+    animation-timing-function: linear;
+  }
+
+.player-shell[edgemove="1"]{
+    animation: moveDown .3s linear forwards;
+}
+.player-shell[edgemove="2"]{
+    animation: moveLeft .3s linear forwards;
+}
+.player-shell[edgemove="3"]{
+    animation: moveUp .3s linear forwards;
+}
+.player-shell[edgemove="4"]{
+    animation: moveRight .3s linear forwards;
+}
+
+@keyframes edgeMoveUpMain{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-60px);
+  }
+}
+@keyframes edgeMoveUpAlt{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-60px);
+  }
+}
+@keyframes edgeMoveRightMain{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(60px);
+  }
+}
+@keyframes edgeMoveRightAlt{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(60px);
+  }
+}
+@keyframes edgeMoveDownMain{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(60px);
+  }
+}
+@keyframes edgeMoveDownAlt{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(60px);
+  }
+}
+@keyframes edgeMoveLeftMain{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(-60px);
+  }
+}
+@keyframes edgeMoveLeftAlt{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(-60px);
+  }
+}
+
+.player-shell[playermove="-1"]{
+  animation-timing-function: linear;
+  animation: stepSideUp .3s steps(4), edgeMoveUpMain .3s linear;
+}
+.player-shell[playermove="-11"]{
+  animation-timing-function: linear;
+  animation: stepSideUp2 .3s steps(4), edgeMoveUpAlt .3s linear;
+}
+.player-shell[playermove="-2"]{
+  animation-timing-function: linear;
+  animation: stepSideRight .3s steps(4), edgeMoveRightMain .3s linear;
+}
+.player-shell[playermove="-22"]{
+  animation-timing-function: linear;
+  animation: stepSideRight2 .3s steps(4), edgeMoveRightAlt .3s linear;
+}
+.player-shell[playermove="-3"]{
+  animation-timing-function: linear;
+  animation: stepSideDown .3s steps(4), edgeMoveDownMain .3s linear;
+}
+.player-shell[playermove="-33"]{
+  animation-timing-function: linear;
+  animation: stepSideDown2 .3s steps(4), edgeMoveDownAlt .3s linear;
+}
+.player-shell[playermove="-4"]{
+  animation-timing-function: linear;
+  animation: stepSideLeft .3s steps(4), edgeMoveLeftMain .3s linear;
+}
+.player-shell[playermove="-44"]{
+  animation-timing-function: linear;
+  animation: stepSideLeft2 .3s steps(4), edgeMoveLeftAlt .3s linear;
+}
+
+.player-shell[playermove="1"]{
+  animation-timing-function: linear;
+  animation: stepUp .3s steps(4);
+}
+.player-shell[playermove="2"]{
+  animation-timing-function: linear;
+  animation: stepRight .3s steps(4);
+}
+.player-shell[playermove="3"]{
+  animation-timing-function: linear;
+  animation: stepDown .3s steps(4);
+}
+.player-shell[playermove="4"]{
+  animation-timing-function: linear;
+  animation: stepLeft .3s steps(4);
+}
+
+.player-shell[playermove="11"]{
+  animation-timing-function: linear;
+  animation: stepUp2 .3s steps(4);
+}
+.player-shell[playermove="22"]{
+  animation-timing-function: linear;
+  animation: stepRight2 .3s steps(4);
+}
+.player-shell[playermove="33"]{
+  animation-timing-function: linear;
+  animation: stepDown2 .3s steps(4);
+}
+.player-shell[playermove="44"]{
+  animation-timing-function: linear;
+  animation: stepLeft2 .3s steps(4);
+}
+
+@keyframes stepRight{
+  100%{
+    background-position: -272px 90px;
+  }
+}
+@keyframes stepLeft{
+  100%{
+    background-position: -272px 180px;
+  }
+}
+@keyframes stepUp{
+  100%{
+    background-position: -272px 270px;
+  }
+}
+@keyframes stepDown{
+  100%{
+    background-position: -272px 0px;
+  }
+}
+@keyframes stepRight2{
+  100%{
+    background-position: 0px 90px;
+  }
+}
+@keyframes stepLeft2{
+  100%{
+    background-position: 0px 180px;
+  }
+}
+@keyframes stepUp2{
+  100%{
+    background-position: 0px 270px;
+  }
+}
+@keyframes stepDown2{
+  100%{
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes stepSideRight{
+  100%{
+    background-position: -272px 90px;
+  }
+}
+@keyframes stepSideLeft{
+  100%{
+    background-position: -272px 180px;
+  }
+}
+@keyframes stepSideUp{
+  100%{
+    background-position: -272px 270px;
+  }
+}
+@keyframes stepSideDown{
+  100%{
+    background-position: -272px 0px;
+  }
+}
+@keyframes stepSideRight2{
+  100%{
+    background-position: 0px 90px;
+  }
+}
+@keyframes stepSideLeft2{
+  100%{
+    background-position: 0px 180px;
+  }
+}
+@keyframes stepSideUp2{
+  100%{
+    background-position: 0px 270px;
+  }
+}
+@keyframes stepSideDown2{
+  100%{
+    background-position: 0px 0px;
+  }
+}
+
+
+@keyframes moveUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+}
+
+@keyframes moveRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-60px);
+    }
+}
+  
+@keyframes moveDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+  
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}

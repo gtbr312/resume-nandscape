@@ -1,0 +1,826 @@
+.nand-bot{
+    position: absolute;
+    width: 45px;
+    height: 58px;
+    margin: 2px 8px 2px 8px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/sprites/playerSprites/robot.png");
+    margin-top: -20px;
+}
+
+@keyframes noCompMain1{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAlt1{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompMainAlt1{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAltMain1{
+  100%{
+    background-color: transparent;
+  }
+}
+
+@keyframes noCompMain2{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAlt2{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompMainAlt2{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAltMain2{
+  100%{
+    background-color: transparent;
+  }
+}
+
+@keyframes noCompMain3{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAlt3{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompMainAlt3{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAltMain3{
+  100%{
+    background-color: transparent;
+  }
+}
+
+@keyframes noCompMain4{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAlt4{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompMainAlt4{
+  100%{
+    background-color: transparent;
+  }
+}
+@keyframes noCompAltMain4{
+  100%{
+    background-color: transparent;
+  }
+}
+
+.nand-bot[comp='noneCompNoneMain1']{
+  animation: noCompMain1 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAlt1']{
+  animation: noCompAlt1 .3s linear;
+}
+.nand-bot[comp='noneCompNoneMainAlt1']{
+  animation: noCompMainAlt1 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAltMain1']{
+  animation: noCompAltMain1 .3s linear;
+}
+.nand-bot[comp='noneCompNoneMain2']{
+  animation: noCompMain2 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAlt2']{
+  animation: noCompAlt2 .3s linear;
+}
+.nand-bot[comp='noneCompNoneMainAlt2']{
+  animation: noCompMainAlt2 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAltMain2']{
+  animation: noCompAltMain2 .3s linear;
+}
+.nand-bot[comp='noneCompNoneMain3']{
+  animation: noCompMain3 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAlt3']{
+  animation: noCompAlt3 .3s linear;
+}
+.nand-bot[comp='noneCompNoneMainAlt3']{
+  animation: noCompMainAlt3 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAltMain3']{
+  animation: noCompAltMain3 .3s linear;
+}
+.nand-bot[comp='noneCompNoneMain4']{
+  animation: noCompMain4 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAlt4']{
+  animation: noCompAlt4 .3s linear;
+}
+.nand-bot[comp='noneCompNoneMainAlt4']{
+  animation: noCompMainAlt4 .3s linear;
+}
+.nand-bot[comp='noneCompNoneAltMain4']{
+  animation: noCompAltMain4 .3s linear;
+}
+
+
+.nand-bot[comp='upCompLeftMain']{
+  animation: upCompLeftMain .3s linear;
+}
+.nand-bot[comp='upCompRightMain']{
+  animation: upCompRightMain .3s linear;
+}
+.nand-bot[comp='upCompDownMain']{
+  animation: upCompDownMain .3s linear;
+}
+
+.nand-bot[comp='downCompLeftMain']{
+  animation: downCompLeftMain .3s linear;
+}
+.nand-bot[comp='downCompRightMain']{
+  animation: downCompRightMain .3s linear;
+}
+.nand-bot[comp='downCompUpMain']{
+  animation: downCompUpMain .3s linear;
+}
+
+.nand-bot[comp='rightCompLeftMain']{
+  animation: rightCompLeftMain .3s linear;
+}
+.nand-bot[comp='rightCompUpMain']{
+  animation: rightCompUpMain .3s linear;
+}
+.nand-bot[comp='rightCompDownMain']{
+  animation: rightCompDownMain .3s linear;
+}
+
+.nand-bot[comp='leftCompRightMain']{
+  animation: leftCompRightMain .3s linear;
+}
+.nand-bot[comp='leftCompUpMain']{
+  animation: leftCompUpMain .3s linear;
+}
+.nand-bot[comp='leftCompDownMain']{
+  animation: leftCompDownMain .3s linear;
+}
+
+
+.nand-bot[comp='upCompLeftAlt']{
+  animation: upCompLeftAlt .3s linear;
+}
+.nand-bot[comp='upCompRightAlt']{
+  animation: upCompRightAlt .3s linear;
+}
+.nand-bot[comp='upCompDownAlt']{
+  animation: upCompDownAlt .3s linear;
+}
+
+.nand-bot[comp='downCompLeftAlt']{
+  animation: downCompLeftAlt .3s linear;
+}
+.nand-bot[comp='downCompRightAlt']{
+  animation: downCompRightAlt .3s linear;
+}
+.nand-bot[comp='downCompUpAlt']{
+  animation: downCompUpAlt .3s linear;
+}
+
+.nand-bot[comp='rightCompLeftAlt']{
+  animation: rightCompLeftAlt .3s linear;
+}
+.nand-bot[comp='rightCompUpAlt']{
+  animation: rightCompUpAlt .3s linear;
+}
+.nand-bot[comp='rightCompDownAlt']{
+  animation: rightCompDownAlt .3s linear;
+}
+
+.nand-bot[comp='leftCompRightAlt']{
+  animation: leftCompRightAlt .3s linear;
+}
+.nand-bot[comp='leftCompUpAlt']{
+  animation: leftCompUpAlt .3s linear;
+}
+.nand-bot[comp='leftCompDownAlt']{
+  animation: leftCompDownAlt .3s linear;
+}
+
+.nand-bot[comp='upCompLeftMainAlt']{
+  animation: upCompLeftMainAlt .3s linear;
+}
+.nand-bot[comp='upCompRightMainAlt']{
+  animation: upCompRightMainAlt .3s linear;
+}
+.nand-bot[comp='upCompDownMainAlt']{
+  animation: upCompDownMainAlt .3s linear;
+}
+
+.nand-bot[comp='downCompLeftMainAlt']{
+  animation: downCompLeftMainAlt .3s linear;
+}
+.nand-bot[comp='downCompRightMainAlt']{
+  animation: downCompRightMainAlt .3s linear;
+}
+.nand-bot[comp='downCompUpMainAlt']{
+  animation: downCompUpMainAlt .3s linear;
+}
+
+.nand-bot[comp='rightCompLeftMainAlt']{
+  animation: rightCompLeftMainAlt .3s linear;
+}
+.nand-bot[comp='rightCompUpMainAlt']{
+  animation: rightCompUpMainAlt .3s linear;
+}
+.nand-bot[comp='rightCompDownMainAlt']{
+  animation: rightCompDownMainAlt .3s linear;
+}
+
+.nand-bot[comp='leftCompRightMainAlt']{
+  animation: leftCompRightMainAlt .3s linear;
+}
+.nand-bot[comp='leftCompUpMainAlt']{
+  animation: leftCompUpMainAlt .3s linear;
+}
+.nand-bot[comp='leftCompDownMainAlt']{
+  animation: leftCompDownMainAlt .3s linear;
+}
+
+
+.nand-bot[comp='upCompLeftAltMain']{
+  animation: upCompLeftAltMain .3s linear;
+}
+.nand-bot[comp='upCompRightAltMain']{
+  animation: upCompRightAltMain .3s linear;
+}
+.nand-bot[comp='upCompDownAltMain']{
+  animation: upCompDownAltMain .3s linear;
+}
+
+.nand-bot[comp='downCompLeftAltMain']{
+  animation: downCompLeftAltMain .3s linear;
+}
+.nand-bot[comp='downCompRightAltMain']{
+  animation: downCompRightAltMain .3s linear;
+}
+.nand-bot[comp='downCompUpAltMain']{
+  animation: downCompUpAltMain .3s linear;
+}
+
+.nand-bot[comp='rightCompLeftAltMain']{
+  animation: rightCompLeftAltMain .3s linear;
+}
+.nand-bot[comp='rightCompUpAltMain']{
+  animation: rightCompUpAltMain .3s linear;
+}
+.nand-bot[comp='rightCompDownAltMain']{
+  animation: rightCompDownAltMain .3s linear;
+}
+
+.nand-bot[comp='leftCompRightAltMain']{
+  animation: leftCompRightAltMain .3s linear;
+}
+.nand-bot[comp='leftCompUpAltMain']{
+  animation: leftCompUpAltMain .3s linear;
+}
+.nand-bot[comp='leftCompDownAltMain']{
+  animation: leftCompDownAltMain .3s linear;
+}
+
+.nand-bot[mapmove='1']{
+    animation: moveUp .3s linear;
+}
+.nand-bot[mapmove='2']{
+    animation: moveRight .3s linear;
+}
+.nand-bot[mapmove='3']{
+    animation: moveDown .3s linear;
+}
+.nand-bot[mapmove='4']{
+    animation: moveLeft .3s linear;
+}
+
+.nand-bot[mapmove='11']{
+    animation: moveUp2 .3s linear;
+}
+.nand-bot[mapmove='22']{
+    animation: moveRight2 .3s linear;
+}
+.nand-bot[mapmove='33']{
+    animation: moveDown2 .3s linear;
+}
+.nand-bot[mapmove='44']{
+    animation: moveLeft2 .3s linear;
+}
+
+
+.nand-bot[botmove='1']{
+    animation: moveDown .3s linear;
+}
+.nand-bot[botmove='2']{
+    animation: moveLeft .3s linear;
+}
+.nand-bot[botmove='3']{
+    animation: moveUp .3s linear;
+}
+.nand-bot[botmove='4']{
+    animation: moveRight .3s linear;
+}
+
+.nand-bot[botmove='11']{
+    animation: moveBotDown .3s linear;
+}
+.nand-bot[botmove='22']{
+    animation: moveBotLeft .3s linear;
+}
+.nand-bot[botmove='33']{
+    animation: moveBotUp .3s linear;
+}
+.nand-bot[botmove='44']{
+    animation: moveBotRight .3s linear;
+}
+
+@keyframes moveBotUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes moveBotRight {
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-60px);
+}
+}
+
+@keyframes moveBotDown {
+from {
+  transform: translateY(0);
+}
+to {
+  transform: translateY(-60px);
+}
+}
+
+@keyframes moveBotLeft {
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(60px);
+}
+}
+
+@keyframes upCompRightMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+
+@keyframes upCompLeftMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+
+@keyframes upCompDownMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, -120px);
+    }
+}
+
+@keyframes downCompRightMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes downCompLeftMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes downCompUpMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, 120px);
+    }
+}
+
+@keyframes rightCompLeftMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(120px, 0px);
+    }
+}
+
+@keyframes rightCompUpMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes rightCompDownMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+@keyframes leftCompRightMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-120px, 0px);
+    }
+}
+
+@keyframes leftCompUpMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes leftCompDownMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+
+@keyframes upCompRightAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+
+@keyframes upCompLeftAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+
+@keyframes upCompDownAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, -120px);
+    }
+}
+
+@keyframes downCompRightAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes downCompLeftAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes downCompUpAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, 120px);
+    }
+}
+
+@keyframes rightCompLeftAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(120px, 0px);
+    }
+}
+
+@keyframes rightCompUpAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes rightCompDownAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+@keyframes leftCompRightAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-120px, 0px);
+    }
+}
+
+@keyframes leftCompUpAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes leftCompDownAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+
+@keyframes upCompRightMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+
+@keyframes upCompLeftMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+
+@keyframes upCompDownMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, -120px);
+    }
+}
+
+@keyframes downCompRightMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes downCompLeftMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes downCompUpMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, 120px);
+    }
+}
+
+@keyframes rightCompLeftMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(120px, 0px);
+    }
+}
+
+@keyframes rightCompUpMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes rightCompDownMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+@keyframes leftCompRightMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-120px, 0px);
+    }
+}
+
+@keyframes leftCompUpMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes leftCompDownMainAlt{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+
+@keyframes upCompRightAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+
+@keyframes upCompLeftAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+
+@keyframes upCompDownAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, -120px);
+    }
+}
+
+@keyframes downCompRightAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes downCompLeftAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes downCompUpAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, 120px);
+    }
+}
+
+@keyframes rightCompLeftAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(120px, 0px);
+    }
+}
+
+@keyframes rightCompUpAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, 60px);
+    }
+}
+
+@keyframes rightCompDownAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(60px, -60px);
+    }
+}
+@keyframes leftCompRightAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-120px, 0px);
+    }
+}
+
+@keyframes leftCompUpAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, 60px);
+    }
+}
+
+@keyframes leftCompDownAltMain{
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(-60px, -60px);
+    }
+}
+

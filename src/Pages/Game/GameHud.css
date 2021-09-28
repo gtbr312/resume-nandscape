@@ -1,0 +1,12 @@
+.game-hud{
+    width: 1366px;
+    height: 768px;
+}
+
+@media screen and (min-width: 1366px){
+    .game-hud{
+        width: calc(.9 * 1366px);
+        height: calc(.9 * 768px);;
+    }
+}
+

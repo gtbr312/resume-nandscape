@@ -1,0 +1,152 @@
+.game-floor-grid{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(19, 60px);
+    grid-template-rows: repeat(13, 60px);
+    top: -60px;
+    left: -60px;
+}
+
+.game-floor-tile{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grass{
+    background-image: url("../../assets/sprites/tileSprites/grass.png");  
+}
+
+.stone{
+    background-size: 60px 60px;
+    background-image: url("../../assets/sprites/tileSprites/stone.png");  
+}
+
+@keyframes stayMain1{
+  100%{ background-color: transparent;}
+}
+@keyframes stayMain2{
+  100%{ background-color: transparent;}
+}
+@keyframes stayAlt1{
+  100%{ background-color: transparent;}
+}
+@keyframes stayAlt2{
+  100%{ background-color: transparent;}
+}
+
+.game-floor-grid[move='88']{
+  animation: stayMain1 .3s linear;
+}
+.game-floor-grid[move='968']{
+  animation: stayMain2 .3s linear;
+}
+
+.game-floor-grid[move='-88']{
+  animation: stayAlt1 .3s linear;
+}
+.game-floor-grid[move='-968']{
+  animation: stayAlt2 .3s linear;
+}
+
+
+.game-floor-grid[move='1']{
+    animation: moveUp .3s linear;
+}
+.game-floor-grid[move='2']{
+    animation: moveRight .3s linear;
+}
+.game-floor-grid[move='3']{
+    animation: moveDown .3s linear;
+}
+.game-floor-grid[move='4']{
+    animation: moveLeft .3s linear;
+}
+.game-floor-grid[move='11']{
+    animation: moveUp2 .3s linear;
+}
+.game-floor-grid[move='22']{
+    animation: moveRight2 .3s linear;
+}
+.game-floor-grid[move='33']{
+    animation: moveDown2 .3s linear;
+}
+.game-floor-grid[move='44']{
+    animation: moveLeft2 .3s linear;
+}
+
+@keyframes moveUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+  }
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
+@keyframes moveUp2 {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+  }
+
+@keyframes moveRight2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes moveDown2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes moveLeft2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}

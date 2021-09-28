@@ -1,0 +1,71 @@
+@keyframes moveUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+  }
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: transformY(0);
+  }
+  to {
+    transform: transformY(-60px);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
+
+@keyframes moveUpAlt {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+  }
+
+@keyframes moveRightAlt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes moveDownAlt {
+  from {
+    transform: transformY(0);
+  }
+  to {
+    transform: transformY(-60px);
+  }
+}
+
+@keyframes moveLeftAlt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}

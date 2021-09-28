@@ -1,0 +1,112 @@
+.word-obj{
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+}
+
+.world-obj[move='1']{
+    animation: moveUp .3s linear;
+}
+.world-obj[move='2']{
+    animation: moveRight .3s linear;
+}
+.world-obj[move='3']{
+    animation: moveDown .3s linear;
+}
+.world-obj[move='4']{
+    animation: moveLeft .3s linear;
+}
+.world-obj[move='11']{
+    animation: moveUp2 .3s linear;
+}
+.world-obj[move='22']{
+    animation: moveRight2 .3s linear;
+}
+.world-obj[move='33']{
+    animation: moveDown2 .3s linear;
+}
+.world-obj[move='44']{
+    animation: moveLeft2 .3s linear;
+}
+
+.tree{
+    position: absolute;
+    width: 82px;
+    height: 106px;
+    background-size: cover;
+    top:-50px;
+    left: -10px;
+    background-image: url("../../assets/sprites/tileSprites/tree1.png");
+    pointer-events: none;
+}
+
+@keyframes moveUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+  }
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
+@keyframes moveUp2 {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+  }
+
+@keyframes moveRight2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes moveDown2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes moveLeft2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
